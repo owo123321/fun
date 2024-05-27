@@ -1,0 +1,9 @@
+#Valorant
+PROCESS-NAME, VALORANT-Win64-Shipping.exe
+
+#Goose Goose Duck
+PROCESS-NAME, Goose Goose Duck.exe
+PROCESS-NAME, com.Gaggle.fun.GooseGooseDuck
+
+#Apex
+PROCESS-NAME, r5apex.exe
