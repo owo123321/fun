@@ -7,3 +7,6 @@ PROCESS-NAME, com.Gaggle.fun.GooseGooseDuck
 
 #Apex
 PROCESS-NAME, r5apex.exe
+
+#黎明杀机
+PROCESS-NAME, DeadByDaylight-Win64-Shipping.exe
