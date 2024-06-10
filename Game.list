@@ -1,10 +1,6 @@
 #Valorant
 PROCESS-NAME, VALORANT-Win64-Shipping.exe
 
-#Goose Goose Duck
-PROCESS-NAME, Goose Goose Duck.exe
-PROCESS-NAME, com.Gaggle.fun.GooseGooseDuck
-
 #Apex
 PROCESS-NAME, r5apex.exe
 
@@ -13,3 +9,7 @@ PROCESS-NAME, DeadByDaylight-Win64-Shipping.exe
 
 #街霸6
 PROCESS-NAME, StreetFighter6.exe
+
+#Goose Goose Duck
+PROCESS-NAME, Goose Goose Duck.exe
+PROCESS-NAME, com.Gaggle.fun.GooseGooseDuck
