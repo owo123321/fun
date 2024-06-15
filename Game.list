@@ -7,6 +7,9 @@ PROCESS-NAME, r5apex.exe
 #街霸6
 PROCESS-NAME, StreetFighter6.exe
 
+#黎明杀机
+PROCESS-NAME, DeadByDaylight-Win64-Shipping.exe
+
 #Goose Goose Duck
 PROCESS-NAME, Goose Goose Duck.exe
 PROCESS-NAME, com.Gaggle.fun.GooseGooseDuck
