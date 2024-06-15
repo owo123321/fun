@@ -4,9 +4,6 @@ PROCESS-NAME, VALORANT-Win64-Shipping.exe
 #Apex
 PROCESS-NAME, r5apex.exe
 
-#黎明杀机
-PROCESS-NAME, DeadByDaylight-Win64-Shipping.exe
-
 #街霸6
 PROCESS-NAME, StreetFighter6.exe
 
