@@ -2,9 +2,8 @@
 DOMAIN-SUFFIX, micu.hk
 
 #GuGu
-DOMAIN, main.gugu.media
-DOMAIN, pro.gugu.media
-DOMAIN, v6.gugu.media
+DOMAIN-SUFFIX, gugumedia.site
+DOMAIN-SUFFIX, gugu.media
 
 #垃圾
 DOMAIN-SUFFIX, xmsl.org
