@@ -13,3 +13,6 @@ PROCESS-NAME, DeadByDaylight-Win64-Shipping.exe
 #Goose Goose Duck
 PROCESS-NAME, Goose Goose Duck.exe
 PROCESS-NAME, com.Gaggle.fun.GooseGooseDuck
+
+#荒野乱斗
+PROCESS-NAME, com.supercell.brawlstars
