@@ -4,6 +4,7 @@ DOMAIN,suc-store.usuc.cc
 
 #国内测速
 DOMAIN-SUFFIX,speedtest.cn
+DOMAIN-SUFFIX,test-ipv6.com
 
 #去广告误杀
 
