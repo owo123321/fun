@@ -16,3 +16,6 @@ PROCESS-NAME, com.Gaggle.fun.GooseGooseDuck
 
 #荒野乱斗
 PROCESS-NAME, com.supercell.brawlstars
+
+#PUBG
+PROCESS-NAME, TslGame.exe
