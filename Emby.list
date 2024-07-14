@@ -12,7 +12,7 @@ DOMAIN-SUFFIX, xmsl.org
 DOMAIN-SUFFIX, jmsooo.com
 
 #终点站
-#DOMAIN-SUFFIX, emby.wtf
+DOMAIN-SUFFIX, emby.wtf
 
 #Peach
 DOMAIN-SUFFIX, peachmv.me
@@ -21,7 +21,7 @@ DOMAIN-SUFFIX, peachmv.me
 DOMAIN, cc.coemn.com
 
 #ACA
-#DOMAIN, emby.aca.best
+DOMAIN, emby.aca.best
 
 #PiliPili
 DOMAIN, emby.pilipiliultra.top
