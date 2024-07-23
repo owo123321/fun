@@ -1,6 +1,7 @@
 #Sub
 DOMAIN,api.dler.io
 DOMAIN,suc-store.usuc.cc
+DOMAIN,api-store.usuc.cc
 
 #本地/局域网地址
 DOMAIN-SUFFIX,ip6-localhost
