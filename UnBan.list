@@ -2,12 +2,6 @@
 DOMAIN,api.dler.io
 DOMAIN,suc-store.usuc.cc
 
-#国内测速
-DOMAIN-SUFFIX,speedtest.cn
-DOMAIN-SUFFIX,test-ipv6.com
-
-#去广告误杀
-
 #本地/局域网地址
 DOMAIN-SUFFIX,ip6-localhost
 DOMAIN-SUFFIX,ip6-loopback
@@ -45,6 +39,12 @@ DOMAIN-SUFFIX,tendawifi.com
 DOMAIN-SUFFIX,zte.home
 DOMAIN-SUFFIX,tplogin.cn
 DOMAIN-SUFFIX,wifi.cmcc
+
+#国内测速
+DOMAIN-SUFFIX,speedtest.cn
+DOMAIN-SUFFIX,test-ipv6.com
+
+#去广告误杀
 
 #雀魂
 DOMAIN-SUFFIX,game.maj-soul.com
