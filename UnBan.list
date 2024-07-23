@@ -47,6 +47,10 @@ DOMAIN-SUFFIX,test-ipv6.com
 
 #去广告误杀
 
+#付费Emby
+DOMAIN-SUFFIX, gugumedia.site
+DOMAIN-SUFFIX, gugu.media
+
 #雀魂
 DOMAIN-SUFFIX,game.maj-soul.com
 DOMAIN-SUFFIX,gateway-cdn.maj-soul.com
@@ -78,7 +82,7 @@ DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
 DOMAIN,xz.pphimalayanrt.com
 DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
 
-#steamCN
+#SteamCN
 DOMAIN,csgo.wmsj.cn
 DOMAIN,dl.steam.clngaa.com
 DOMAIN,dl.steam.ksyna.com
@@ -128,7 +132,7 @@ IP-CIDR,192.35.50.0/24,no-resolve
 IP-CIDR,198.183.17.0/24,no-resolve
 IP-CIDR,205.180.175.0/24,no-resolve
 
-#googleCN
+#GoogleCN
 DOMAIN-SUFFIX,265.com
 DOMAIN-SUFFIX,2mdn.net
 DOMAIN-SUFFIX,alt1-mtalk.google.com
