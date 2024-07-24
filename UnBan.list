@@ -47,10 +47,6 @@ DOMAIN-SUFFIX,test-ipv6.com
 
 #去广告误杀
 
-#付费Emby
-DOMAIN-SUFFIX, gugumedia.site
-DOMAIN-SUFFIX, gugu.media
-
 #雀魂
 DOMAIN-SUFFIX,game.maj-soul.com
 DOMAIN-SUFFIX,gateway-cdn.maj-soul.com
