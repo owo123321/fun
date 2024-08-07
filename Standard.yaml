@@ -58,25 +58,50 @@ dns:
   enable: true
   # IPV6
   ipv6: true
+  # 开启 DoH 支持 HTTP/3
+  prefer-h3: true
   # DNS处理模式: normal/fake-ip/redir-host
   enhanced-mode: fake-ip
   # DNS监听地址
-  listen: :1053
+  listen: 1053
   # Fake-IP解析地址池
   fake-ip-range: 198.18.0.1/16
   # fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
-  fake-ip-filter: ['*.lan','*.direct', cable.auth.com, '*.msftconnecttest.com', '*.msftncsi.com', network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, proxy.golang.org, '*.mcdn.bilivideo.cn', '*.cmpassport.com', id6.me, 'open.e.189.cn', mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', '*.10099.com.cn', pool.ntp.org, '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*']
+  fake-ip-filter: 
+    - "*"
+    - "+.lan"
+    - "+.invalid.*"
+    - "+.localhost"
+    - "+.local.*"
+    - "+.time.*"
+    - "+.ntp.*"
+    - "+.time.edu.cn"
+    - "+.ntp.org.cn"
+    - "+.pool.ntp.org"
+    - "+.qpic.cn"
+    - "localhost.ptlogin2.qq.com"
+    - "localhost.sec.qq.com"
+    - "dns.msftncsi.com"
+    - "www.msftncsi.com"
+    - "www.msftconnecttest.com"
+    - "time1.cloud.tencent.com"
   # 解析非 IP 的 dns 用的 dns 服务器,只支持纯 IP
-  default-nameserver: [119.29.29.29, 114.114.114.114]
+  default-nameserver:
+    - "2402:4e00::" # Tencent IPv6
+    - "2400:3200::1"  # Alibaba IPv6
+    - "119.29.29.29" # Tencent IPv4
+    - "223.5.5.5" # Alibaba IPv4
   # 默认的域名解析服务器
-  nameserver: [119.29.29.29, 114.114.114.114]
+  nameserver: 
+    - "https://doh.pub/dns-query" # Tencent DoH
+    - "https://223.5.5.5/dns-query" # Alibaba IPv4 DoH
   # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
   nameserver-policy:
   'geosite:cn': system
   'geosite:gfw,geolocation-!cn': [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]
 
 # 策略组引用相关参数
-pg: &pg {type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
+pg: &pg {type: select, proxies: [冲浪, 媒体, 自选, DIRECT]}
 # 订阅更新和延迟测试相关参数
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://latency-test.skk.moe/endpoint, interval: 1800}}
 # 自动选择策略组：选取延迟最低节点
@@ -103,43 +128,21 @@ proxy-groups:
 
   #分流分组
 
-  - {name: 手动切换, type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT], icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png}
+  - {name: 溜溜球, type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT], icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png}
 
-  - {name: 国外网站, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png}
+  - {name: 流媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png}
 
-  - {name: 国际媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
+  - {name: 公益服, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
 
-  - {name: 苹果服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
+  - {name: 打电动, type: select, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
 
-  - {name: 微软服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
+  #节点分组
 
-  - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png}
+  - {name: 冲浪, <<: &fallback, filter: "(?i)🇭🇰|香港|(HK|Hong)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
 
-  - {name: 电报消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png}
+  - {name: 媒体, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
 
-  - {name: 推特消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
-
-  - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
-
-  - {name: 游戏平台, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
-
-  - {name: Emby, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
-
-  - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png}
-
-  - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
-
-  #节点地区分组
-
-  - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
-
-  - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
-
-  - {name: 狮城节点, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
-
-  - {name: 日本节点, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
-
-  - {name: 台湾节点, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
+  - {name: 自选, type: select, filter: "(?i)🇸🇬|新加坡|狮城)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
 
 rule-providers:
 
