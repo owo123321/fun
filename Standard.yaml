@@ -113,7 +113,7 @@ proxy-providers:
     
 # 节点筛选
 FilterCL: &FilterCL '(HK|TW).*0\.2|(HK|JP).*1\.0'
-FilterMT: &FilterMT '(US|EU）.*0\.1' 
+FilterMT: &FilterMT '(US|EU).*0\.1' 
 FilterGame: &FilterGame '1.0X|3X|5X|20X|Game'
 FilterAll: &FilterAll '.*'
 
