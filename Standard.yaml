@@ -102,15 +102,7 @@ dns:
     - https://dns.alidns.com/dns-query # Alibaba IPv4 DoH
 
 # 策略组引用相关参数
-node: &node
-{
- type: http, interval: 86400, 
- health-check: 
-  {
-  enable: true, 
-  url: 'http://cp.cloudflare.com/generate_204', interval: 60
-  }
-}
+node: &node {type: http, interval: 86400, health-check: {enable: true, url: 'http://cp.cloudflare.com/generate_204', interval: 60}}
   
 proxy-providers:
   订阅: 
