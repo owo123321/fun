@@ -1,30 +1,33 @@
-# 混合端口 HTTP和SOCKS5端口共用
-mixed-port: 7893
-# TCP 并发
-tcp-concurrent: true
-allow-lan: true
-ipv6: true
-udp: true
-unified-delay: true
-# TCP Keep Alive 间隔，缓解移动设备耗电问题
-keep-alive-interval: 1800
-# 规则模式：rule/global/direct/script
-mode: rule
-# 设置日志输出级别: silent/error/warning/info/debug
-log-level: info
-# 匹配所有进程（always/strict/off）
-find-process-mode: strict
-global-client-fingerprint: chrome
+# 日期：2024-08-07
+port: 7890
+socks-port: 7891
+mixed-port: 7892
+redir-port: 7893
+tproxy-port: 7894
 
-# 使用geoip.dat数据库
+unified-delay: true
 geodata-mode: false
 geodata-loader: standard
 geo-auto-update: true
 geo-update-interval: 168
+tcp-concurrent: true
+find-process-mode: strict
+global-client-fingerprint: chrome
+
+# TCP 并发
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+udp: true
+# TCP Keep Alive 间隔，缓解移动设备耗电问题
+keep-alive-interval: 1800
+
+# 使用geoip.dat数据库
 geox-url:
-  geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
-  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+  geoip: 'https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat'
+  geosite: 'https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat'
+  mmdb: 'https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb'
 
 profile:
   # 存储 select 选择记录
@@ -33,7 +36,8 @@ profile:
   store-fake-ip: true
 
 # 嗅探域名
-enable: true
+sniffer:
+  enable: true
   force-dns-mapping: true
   parse-pure-ip: true
   override-destination: true
@@ -67,7 +71,6 @@ dns:
   ipv6: true
   # DNS处理模式: normal/fake-ip/redir-host
   enhanced-mode: fake-ip
-  # DNS监听地址
   listen: 0.0.0.0:1053
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: 
@@ -133,53 +136,65 @@ LoadBalance: &LoadBalance {type: load-balance, interval: 60, lazy: true, url: 'h
 # 锚点 - 规则参数 [每天更新一次订阅规则，更新规则时使用直连策略]
 RuleProviders: &RuleProviders {type: http, behavior: classical, interval: 86400, format: yaml, proxy: DIRECT}
 
-
+#策略组
 proxy-groups:
-
   #分流分组
-  
   - {name: 溜溜球, type: select, proxies: [冲浪, 媒体, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Badoo.png}
-
   - {name: 流媒体, type: select, proxies: [媒体, 冲浪, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/YouTube.png}
-
-  - {name: 公益服, type: select, proxies: [媒体, 冲浪, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/BiliBili.png}
-
-  - {name: 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT, 自选] icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
+  - {name: 公益服, type: select, proxies: [媒体, 冲浪, 自选, DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/BiliBili.png}
+  - {name: 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
 
   #节点分组
-
   - {name: 冲浪, <<: *FallBack, filter: *FilterCL, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/pikachu.png}
-
   - {name: 媒体, <<: *FallBack, filter: *FilterMT, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/5icon.png}
-
   - {name: 自选, type: select, include-all-providers: true, filter: *FilterAll, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/snorlax.png}
 
 #订阅规则
 rule-providers:
   # 强制直连
-  UnBan: {<<: *c, path: ./rule-providers/UnBan.list,  url: https://raw.githubusercontent.com/owo123321/fun/main/UnBan.list}
-
+  UnBan: 
+  <<: *RuleProviders
+  path: ./rule-providers/UnBan.list
+  url: https://raw.githubusercontent.com/owo123321/fun/main/UnBan.list
   # 强制代理
-  Proxy: {<<: *c, path: ./rule-providers/Proxy.list,  url: https://raw.githubusercontent.com/owo123321/fun/main/Proxy.list}
-
+  Proxy: 
+  <<: *RuleProviders
+  path: ./rule-providers/Proxy.list
+  url: https://raw.githubusercontent.com/owo123321/fun/main/Proxy.list
   # 广告拦截
-  BanProgramAD: {<<: *c, path: ./rule-providers/BanProgramAD.list, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list}
-  BanAD: {<<: *c, path: ./rule-providers/BanAD.list, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list}
-  
+  BanProgramAD: 
+  <<: *RuleProviders
+  path: ./rule-providers/BanProgramAD.list
+  url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+  BanAD: 
+  <<: *RuleProviders
+  path: ./rule-providers/BanAD.list
+  url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
   # 微信
-  WeChat: {<<: *c, path: ./rule-providers/WeChat.list,  url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list}
-  
+  WeChat: 
+  <<: *RuleProviders
+  path: ./rule-providers/WeChat.list
+  url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list
   # 游戏
-  Game: {<<: *c, path: ./rule-providers/Game.list,  url: https://raw.githubusercontent.com/owo123321/fun/main/Game.list}
-
+  Game: 
+  <<: *RuleProviders
+  path: ./rule-providers/Game.list
+  url: https://raw.githubusercontent.com/owo123321/fun/main/Game.list
   # 公益服
-  Emby: {<<: *c, path: ./rule-providers/Emby.list,  url: https://raw.githubusercontent.com/owo123321/fun/main/Emby.list}
-  
+  Emby: 
+  <<: *RuleProviders
+  path: ./rule-providers/Emby.list
+  url: https://raw.githubusercontent.com/owo123321/fun/main/Emby.list
   # 国际媒体
-  ProxyMedia: {<<: *c, path: ./rule-providers/GlobalMedia.list,  url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/ProxyMedia.list}
-  
+  ProxyMedia: 
+  <<: *RuleProviders
+  path: ./rule-providers/GlobalMedia.list
+  url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/ProxyMedia.list
   # Bing
-  Bing: {<<: *c, path: ./rule-providers/Bing.list,  url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list}
+  Bing: 
+  <<: *RuleProviders
+  path: ./rule-providers/Bing.list
+  url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list
   
   rules:
   - RULE-SET,UnBan,DIRECT
