@@ -22,9 +22,9 @@ find-process-mode: strict
 # 使用geoip.dat数据库
 geodata-mode: true
 geox-url:
-  geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
-  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
 
 profile:
   # 存储 select 选择记录
@@ -123,48 +123,48 @@ proxy-groups:
 
   #分流分组
   
-  - {name: 溜溜球, <<: *cl, icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Badoo.png}
+  - {name: 溜溜球, <<: *cl, icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Badoo.png}
 
-  - {name: 流媒体, <<: *mt, icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/YouTube.png}
+  - {name: 流媒体, <<: *mt, icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/YouTube.png}
 
-  - {name: 公益服, <<: *mt, icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/BiliBili.png}
+  - {name: 公益服, <<: *mt, icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/BiliBili.png}
 
-  - {name: 打电动, type: *use, icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
+  - {name: 打电动, type: *use, icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
 
   #节点分组
 
-  - {name: 冲浪, <<: *fallback, filter: "(HK|TW).*0\.2|(HK|JP).*1\.0", icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/pikachu.png}
+  - {name: 冲浪, <<: *fallback, filter: "(HK|TW).*0\.2|(HK|JP).*1\.0", icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/pikachu.png}
 
-  - {name: 媒体, <<: *fallback, filter: "（US|EU）.*0\.1", icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/5icon.png}
+  - {name: 媒体, <<: *fallback, filter: "（US|EU）.*0\.1", icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/5icon.png}
 
-  - {name: 自选, <<: *use, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/snorlax.png}
+  - {name: 自选, <<: *use, icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/snorlax.png}
 
 rule-providers:
 
   # 强制直连
-  UnBan: {<<: *c, path: ./rule-providers/UnBan.list,  url: https://raw.githubusercontent.com/owo123321/fun/main/UnBan.list}
+  UnBan: {<<: *c, path: ./rule-providers/UnBan.list,  url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/owo123321/fun/main/UnBan.list}
 
   # 强制代理
-  Proxy: {<<: *c, path: ./rule-providers/Proxy.list,  url: https://raw.githubusercontent.com/owo123321/fun/main/Proxy.list}
+  Proxy: {<<: *c, path: ./rule-providers/Proxy.list,  url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/owo123321/fun/main/Proxy.list}
 
   # 广告拦截
-  BanProgramAD: {<<: *c, path: ./rule-providers/BanProgramAD.list, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list}
-  BanAD: {<<: *c, path: ./rule-providers/BanAD.list, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list}
+  BanProgramAD: {<<: *c, path: ./rule-providers/BanProgramAD.list, url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list}
+  BanAD: {<<: *c, path: ./rule-providers/BanAD.list, url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list}
   
   # 微信
-  WeChat: {<<: *c, path: ./rule-providers/WeChat.list,  url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list}
+  WeChat: {<<: *c, path: ./rule-providers/WeChat.list,  url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list}
   
   # 游戏
-  Game: {<<: *c, path: ./rule-providers/Game.list,  url: https://raw.githubusercontent.com/owo123321/fun/main/Game.list}
+  Game: {<<: *c, path: ./rule-providers/Game.list,  url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/owo123321/fun/main/Game.list}
 
   # 公益服
-  Emby: {<<: *c, path: ./rule-providers/Emby.list,  url: https://raw.githubusercontent.com/owo123321/fun/main/Emby.list}
+  Emby: {<<: *c, path: ./rule-providers/Emby.list,  url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/owo123321/fun/main/Emby.list}
   
   # 国际媒体
-  ProxyMedia: {<<: *c, path: ./rule-providers/GlobalMedia.list,  url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/ProxyMedia.list}
+  ProxyMedia: {<<: *c, path: ./rule-providers/GlobalMedia.list,  url: https://mirror.ghproxy.com/https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/ProxyMedia.list}
   
   # Bing
-  Bing: {<<: *c, path: ./rule-providers/Bing.list,  url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list}
+  Bing: {<<: *c, path: ./rule-providers/Bing.list,  url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list}
   
   rules:
   - RULE-SET,UnBan,DIRECT
