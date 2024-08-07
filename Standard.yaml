@@ -154,47 +154,47 @@ rule-providers:
   # 强制直连
   UnBan: 
   <<: *RuleProviders
-  path: ./rule-providers/UnBan.yaml
-  url: https://raw.githubusercontent.com/owo123321/fun/main/Providers/UnBan.yaml
+  path: './rules/UnBan.yaml'
+  url: 'https://raw.githubusercontent.com/owo123321/fun/main/Providers/UnBan.yaml'
   # 强制代理
   Proxy: 
   <<: *RuleProviders
-  path: ./rule-providers/Proxy.yaml
-  url: https://raw.githubusercontent.com/owo123321/fun/main/Providers/Proxy.yaml
+  path: './rules/Proxy.yaml'
+  url: 'https://raw.githubusercontent.com/owo123321/fun/main/Providers/Proxy.yaml'
   # 广告拦截
   BanProgramAD: 
   <<: *RuleProviders
-  path: ./rule-providers/BanProgramAD.yaml
-  url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
+  path: './rules/BanProgramAD.yaml'
+  url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml'
   BanAD: 
   <<: *RuleProviders
-  path: ./rule-providers/BanAD.yaml
-  url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
+  path: './rules/BanAD.yaml'
+  url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml'
   # 微信
   WeChat: 
   <<: *RuleProviders
-  path: ./rule-providers/WeChat.yaml
-  url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
+  path: './rules/WeChat.yaml'
+  url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml'
   # 游戏
   Game: 
   <<: *RuleProviders
-  path: ./rule-providers/Game.yaml
-  url: https://raw.githubusercontent.com/owo123321/fun/main/Providers/Game.yaml
+  path: './rules/Game.yaml'
+  url: 'https://raw.githubusercontent.com/owo123321/fun/main/Providers/Game.yaml'
   # 公益服
   Emby: 
   <<: *RuleProviders
-  path: ./rule-providers/Emby.yaml
-  url: https://raw.githubusercontent.com/owo123321/fun/main/Providers/Emby.yaml
+  path: './rules/Emby.yaml'
+  url: 'https://raw.githubusercontent.com/owo123321/fun/main/Providers/Emby.yaml'
   # 国际媒体
   ProxyMedia: 
   <<: *RuleProviders
-  path: ./rule-providers/GlobalMedia.yaml
-  url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml
+  path: './rules/GlobalMedia.yaml'
+  url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml'
   # Bing
   Bing: 
   <<: *RuleProviders
-  path: ./rule-providers/Bing.yaml
-  url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+  path: './rules/Bing.yaml'
+  url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml'
   
   rules:
   - RULE-SET,UnBan,DIRECT
