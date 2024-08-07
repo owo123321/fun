@@ -6,6 +6,10 @@ tcp-concurrent: true
 allow-lan: true
 # IPv6
 ipv6: true
+# TCP Keep Alive 间隔,单位分钟
+keep-alive-interval: 30
+# 统一延迟
+unified-delay: true
 # 规则模式：rule/global/direct/script
 mode: rule
 # 设置日志输出级别: silent/error/warning/info/debug
