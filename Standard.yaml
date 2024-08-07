@@ -102,8 +102,8 @@ node: &node {type: http, interval: 86400, health-check: {enable: true, url: 'htt
 proxy-providers:
   订阅: 
     <<: *node
-    path: ./proxy-providers/Sub.yaml,
-    url: http://your-service-provider
+    path: './proxy-providers/Sub.yaml'
+    url: 'http://your-service-provider'
     # 在此将"http://your-service-provider"替换为你的机场订阅
     
 # 节点筛选
