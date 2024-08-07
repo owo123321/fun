@@ -90,7 +90,7 @@ dns:
   # 默认的域名解析服务器
   nameserver: 
     - "https://doh.pub/dns-query" # Tencent DoH
-    - "https://2dns.alidns.com/dns-query" # Alibaba IPv4 DoH
+    - "https://dns.alidns.com/dns-query" # Alibaba IPv4 DoH
   # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
   nameserver-policy:
   'geosite:cn': system
