@@ -108,9 +108,9 @@ RuleProviders: &RuleProviders {type: http, behavior: classical, interval: 3600, 
 # 策略组
 proxy-groups: 
   - {name: 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT, 自选]}
-  - {name: 白日梦, type: select, proxies: [冲浪，媒体，自选]}
-  - {name: 流媒体, type: select, proxies: [媒体，冲浪， 自选]}
-  - {name: 公益服, type: select, proxies: [媒体，冲浪， 自选， DIRECT]}
+  - {name: 白日梦, type: select, proxies: [冲浪, 媒体, 自选]}
+  - {name: 流媒体, type: select, proxies: [媒体, 冲浪, 自选]}
+  - {name: 公益服, type: select, proxies: [媒体, 冲浪,  自选, DIRECT]}
   
 # 节点策略组
   - {name: 冲浪, <<: *FallBack, filter: *FilterCL}
