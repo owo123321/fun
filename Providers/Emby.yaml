@@ -1,33 +1,34 @@
-#ntRRR
-DOMAIN-SUFFIX, ntrrr.top
+payload:
+  #ntRRR
+  - DOMAIN-SUFFIX, ntrrr.top
 
-#GuGu
-DOMAIN-SUFFIX, gugumedia.site
-DOMAIN-SUFFIX, gugu.media
+  #GuGu
+  - DOMAIN-SUFFIX, gugumedia.site
+  - DOMAIN-SUFFIX, gugu.media
 
-#垃圾
-DOMAIN-SUFFIX, xmsl.org
+  #垃圾
+  - DOMAIN-SUFFIX, xmsl.org
 
-#卷毛鼠
-DOMAIN-SUFFIX, jmsooo.com
+  #卷毛鼠
+  - DOMAIN-SUFFIX, jmsooo.com
 
-#终点站
-DOMAIN-SUFFIX, emby.wtf
+  #终点站
+  - DOMAIN-SUFFIX, emby.wtf
 
-#Peach
-DOMAIN-SUFFIX, peachmv.me
+  #Peach
+  - DOMAIN-SUFFIX, peachmv.me
 
-#CC
-DOMAIN, cc.coemn.com
+  #CC
+  - DOMAIN, cc.coemn.com
 
-#ACA
-DOMAIN, emby.aca.best
+  #ACA
+  - DOMAIN, emby.aca.best
 
-#PiliPili
-DOMAIN, emby.pilipiliultra.top
-DOMAIN, emby.pilipiliultra.com
-DOMAIN-SUFFIX, misakaf.org
+  #PiliPili
+  - DOMAIN, emby.pilipiliultra.top
+  - DOMAIN, emby.pilipiliultra.com
+  - DOMAIN-SUFFIX, misakaf.org
 
 #纸片人
-DOMAIN-SUFFIX, embyplus.org
-DOMAIN-SUFFIX, 9521732.xyz
+  - DOMAIN-SUFFIX, embyplus.org
+  - DOMAIN-SUFFIX, 9521732.xyz
