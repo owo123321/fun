@@ -8,7 +8,7 @@ unified-delay: true
 geodata-mode: false
 geodata-loader: standard
 geo-auto-update: true
-geo-update-interval: 24
+geo-update-interval: 168
 tcp-concurrent: true
 find-process-mode: strict
 global-client-fingerprint: chrome
@@ -110,7 +110,7 @@ proxy-groups:
   - {name: 💫 溜溜球, type: select, proxies: [冲浪, 媒体, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Badoo.png}
   - {name: 🍿 流媒体, type: select, proxies: [媒体, 冲浪, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/YouTube.png}
   - {name: 📺 公益服, type: select, proxies: [媒体, 冲浪, 自选, DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/BiliBili.png}
-  - {name: 🎮 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
+  - {name: 🎮 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
   
 # 节点策略组
   - {name: 冲浪, <<: *FallBack, filter: *FilterCL, hidden: false, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/pikachu.png}
