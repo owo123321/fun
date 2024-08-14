@@ -113,8 +113,8 @@ proxy-groups:
   - {name: 🎮 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
   
 # 节点策略组
-  - {name: 冲浪, <<: *FallBack, filter: *FilterCL, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/pikachu.png}
-  - {name: 媒体, <<: *FallBack, filter: *FilterMT, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/5icon.png}
+  - {name: 冲浪, <<: *FallBack, filter: *FilterCL, hidden: false, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/pikachu.png}
+  - {name: 媒体, <<: *FallBack, filter: *FilterMT, hidden: false, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/5icon.png}
   - {name: 自选, type: select, include-all-providers: true, filter: *FilterAll,  icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/snorlax.png}
 
 # 订阅规则
