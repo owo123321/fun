@@ -107,10 +107,10 @@ RuleProviders: &RuleProviders {type: http, behavior: classical, interval: 3600, 
 
 # 策略组
 proxy-groups: 
-  - {name: 💫 溜溜球, type: select, proxies: [冲浪, 媒体, 自选], https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Badoo.png}
-  - {name: 🍿 流媒体, type: select, proxies: [媒体, 冲浪, 自选], https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/YouTube.png}
+  - {name: 💫 溜溜球, type: select, proxies: [冲浪, 媒体, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Badoo.png}
+  - {name: 🍿 流媒体, type: select, proxies: [媒体, 冲浪, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/YouTube.png}
   - {name: 📺 公益服, type: select, proxies: [媒体, 冲浪, 自选, DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/BiliBili.png}
-  - {name: 🎮 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT, 自选], icon: icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
+  - {name: 🎮 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT, 自选], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
   
 # 节点策略组
   - {name: 冲浪, <<: *FallBack, filter: *FilterCL, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/pikachu.png}
