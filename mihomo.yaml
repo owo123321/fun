@@ -91,7 +91,7 @@ proxy-providers:
 
 # 锚点 - 节点筛选组
 FilterCL: &FilterCL '(HK|JP).*(?i)1X|(HK|TW).*0\.2'
-FilterMT: &FilterMT '(US|EU).*0\.1|US.*0\.5'
+FilterMT: &FilterMT '(US|EU).*0\.1'
 FilterGame: &FilterGame '(?i)-1X|-3X|-5X|20X'
 FilterAll: &FilterAll '.*(.)'
 
