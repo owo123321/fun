@@ -90,8 +90,8 @@ proxy-providers:
       additional-prefix: "[机场名称1] " # 为订阅节点添加机场名称前缀
 
 # 锚点 - 节点筛选组
-FilterCL: &FilterCL '(HK|TW).*0\.2|(HK|JP).*1\.0'
-FilterMT: &FilterMT '(US|EU).*0\.1'
+FilterCL: &FilterCL '^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+FilterMT: &FilterMT '^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
 FilterGame: &FilterGame '^(?=.*((?i)1X|3X|20X).*$'
 FilterAll: &FilterAll '^(?=.*(.)).*$'
 
