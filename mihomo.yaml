@@ -107,15 +107,15 @@ RuleProviders: &RuleProviders {type: http, behavior: classical, interval: 3600, 
 
 # 策略组
 proxy-groups: 
-  - {name: 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT, 自选]}
-  - {name: 白日梦, type: select, proxies: [冲浪, 媒体, 自选]}
-  - {name: 流媒体, type: select, proxies: [媒体, 冲浪, 自选]}
-  - {name: 公益服, type: select, proxies: [媒体, 冲浪, 自选, DIRECT]}
+  - {name: 溜溜球, type: select, proxies: [冲浪, 媒体, 自选], https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Badoo.png}
+  - {name: 流媒体, type: select, proxies: [媒体, 冲浪, 自选], https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/YouTube.png}
+  - {name: 公益服, type: select, proxies: [媒体, 冲浪, 自选, DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/BiliBili.png}
+  - {name: 打电动, type: select, include-all-providers: true, filter: *FilterGame, proxies: [DIRECT, 自选], icon: icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Steam.png}
   
 # 节点策略组
-  - {name: 冲浪, <<: *FallBack, filter: *FilterCL}
-  - {name: 媒体, <<: *FallBack, filter: *FilterMT}
-  - {name: 自选, type: select, include-all-providers: true, filter: *FilterAll}
+  - {name: 冲浪, <<: *FallBack, filter: *FilterCL, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/pikachu.png}
+  - {name: 媒体, <<: *FallBack, filter: *FilterMT, icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/5icon.png}
+  - {name: 自选, type: select, include-all-providers: true, filter: *FilterAll,  icon: https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/snorlax.png}
 
 # 订阅规则
 rule-providers:
@@ -167,13 +167,13 @@ rule-providers:
 # 规则指向
 rules:
   - RULE-SET, UnBan, DIRECT
-  - RULE-SET, Proxy, 白日梦
+  - RULE-SET, Proxy, 溜溜球
   - RULE-SET, BanProgramAD, REJECT
   - RULE-SET, BanAD, REJECT
   - RULE-SET, Game, 打电动
   - RULE-SET, ProxyMedia, 流媒体
   - RULE-SET, Emby, 公益服
-  - RULE-SET, Bing, 白日梦
+  - RULE-SET, Bing, 溜溜球
   - RULE-SET, WeChat, DIRECT
   - GEOIP, CN, DIRECT
-  - MATCH, 白日梦
+  - MATCH, 溜溜球
