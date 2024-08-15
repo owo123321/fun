@@ -1,21 +1,21 @@
 #Valorant
-PROCESS-NAME, VALORANT-Win64-Shipping.exe
+PROCESS-NAME,VALORANT-Win64-Shipping.exe
 
 #Apex
-PROCESS-NAME, r5apex.exe
+PROCESS-NAME,r5apex.exe
 
 #街霸6
-PROCESS-NAME, StreetFighter6.exe
+PROCESS-NAME,StreetFighter6.exe
 
 #黎明杀机
-PROCESS-NAME, DeadByDaylight-Win64-Shipping.exe
+PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe
 
 #Goose Goose Duck
-PROCESS-NAME, Goose Goose Duck.exe
-PROCESS-NAME, com.Gaggle.fun.GooseGooseDuck
+PROCESS-NAME,Goose Goose Duck.exe
+PROCESS-NAME,com.Gaggle.fun.GooseGooseDuck
 
 #荒野乱斗
-PROCESS-NAME, com.supercell.brawlstars
+PROCESS-NAME,com.supercell.brawlstars
 
 #PUBG
-PROCESS-NAME, TslGame.exe
+PROCESS-NAME,TslGame.exe
