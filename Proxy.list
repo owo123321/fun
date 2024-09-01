@@ -1,7 +1,7 @@
-# 机场官网
+#机场官网
 DOMAIN-SUFFIX,jinglongyu.com
 
-# GameDownload
+#GameDownload
 DOMAIN,ssl-lvlt.cdn.ea.com
 DOMAIN,origin-a.akamaihd.net
 DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
