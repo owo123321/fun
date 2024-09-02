@@ -1,7 +1,4 @@
 payload:
-  #ntRRR
-  - DOMAIN-SUFFIX,ntrrr.top
-
   #GuGu
   - DOMAIN-SUFFIX,gugumedia.site
   - DOMAIN-SUFFIX,gugu.media
@@ -16,10 +13,7 @@ payload:
   - DOMAIN-SUFFIX,emby.wtf
 
   #Peach
-  - DOMAIN-SUFFIX,peachmv.me
-
-  #CC
-  - DOMAIN,cc.coemn.com
+  - DOMAIN-SUFFIX,embymv.link
 
   #ACA
   - DOMAIN,emby.aca.best
