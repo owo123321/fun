@@ -88,9 +88,15 @@ proxy-providers:
     path: './proxy_providers/机场名称1.yaml'
     override:
       additional-prefix: "[机场名称1] " # 为订阅节点添加机场名称前缀
+   机场名称2:
+    url: '机场2的订阅URL'
+    <<: *NodeParam
+    path: './proxy_providers/机场名称2.yaml'
+    override:
+      additional-prefix: "[机场名称2] " # 为订阅节点添加机场名称前缀
 
 # 锚点 - 节点筛选组
-FilterCL: &FilterCL '(HK|JP).*(?i)1X|(HK|TW).*0\.2'
+FilterCL: &FilterCL '(HK|JP).*(?i)(1X|1\.0)|(HK|TW).*0\.2'
 FilterMT: &FilterMT '(US|EU).*0\.1'
 FilterGame: &FilterGame '(?i)-1X|-3X|-5X|20X'
 FilterAll: &FilterAll '.*(.)'
@@ -123,41 +129,49 @@ rule-providers:
     <<: *RuleProviders
     path: './rules/UnBan.yaml'
     url: 'https://raw.githubusercontent.com/owo123321/fun/main/Providers/UnBan.yaml'
+    proxy: 💫 溜溜球
 
   Proxy:
     <<: *RuleProviders
     path: './rules/Proxy.yaml'
     url: 'https://raw.githubusercontent.com/owo123321/fun/main/Providers/Proxy.yaml'
+    proxy: 💫 溜溜球
 
   BanProgramAD:
     <<: *RuleProviders
     path: './rules/BanProgramAD.yaml'
     url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml'
+    proxy: 💫 溜溜球
 
   BanAD:
     <<: *RuleProviders
     path: './rules/BanAD.yaml'
     url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml'
+    proxy: 💫 溜溜球
 
   WeChat:
     <<: *RuleProviders
     path: './rules/WeChat'
     url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml'
+    proxy: 💫 溜溜球
 
   Game:
     <<: *RuleProviders
     path: './rules/Game.yaml'
     url: 'https://raw.githubusercontent.com/owo123321/fun/main/Providers/Game.yaml'
+    proxy: 💫 溜溜球
   
   ProxyMedia:
     <<: *RuleProviders
     path: './rules/ProxyMedia.yaml'
     url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml'
+    proxy: 💫 溜溜球
   
   Emby:
     <<: *RuleProviders
     path: './rules/Emby.yaml'
     url: 'https://raw.githubusercontent.com/owo123321/fun/main/Providers/Emby.yaml'
+    proxy: 💫 溜溜球
   
 # 规则指向
 rules:
