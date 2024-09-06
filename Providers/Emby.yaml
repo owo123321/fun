@@ -11,6 +11,7 @@ payload:
 
   #终点站
   - DOMAIN-SUFFIX,emby.wtf
+  - DOMAIN-SUFFIX,term.wtf
 
   #Peach
   - DOMAIN-SUFFIX,embymv.link
