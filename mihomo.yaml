@@ -70,6 +70,9 @@ dns:
   fake-ip-filter:
     - "*"
     - +.lan
+    - "dns.msftncsi.com"
+    - "www.msftncsi.com"
+    - "www.msftconnecttest.com"
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
