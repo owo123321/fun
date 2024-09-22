@@ -1,13 +1,13 @@
 payload:
   #GuGu
   - DOMAIN-SUFFIX,gugumedia.site
-  - DOMAIN-SUFFIX,gugu.media
 
   #垃圾
   - DOMAIN-SUFFIX,xmsl.org
-
+  - DOMAIN-SUFFIX,emby.moe
+  
   #卷毛鼠
-  - DOMAIN-SUFFIX,jmsooo.com
+  - DOMAIN-SUFFIX,jmsuper.com
 
   #终点站
   - DOMAIN-SUFFIX,emby.wtf
