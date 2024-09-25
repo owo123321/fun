@@ -66,39 +66,21 @@ payload:
   - DOMAIN-SUFFIX,lb-v2.maj-soul.com
   - DOMAIN-SUFFIX,majsoul-hk-client.cn-hongkong.log.aliyuncs.com
 
-  #GameDownloadCN
-  - DOMAIN,assets1.xboxlive.cn
-  - DOMAIN,assets2.xboxlive.cn
-  - DOMAIN,cdn-ali.content.steamchina.com
+ #SteamCDN(国内)
+  - DOMAIN,alibaba.cdn.steampipe.steamcontent.com
   - DOMAIN,cdn-qc.content.steamchina.com
   - DOMAIN,cdn-ws.content.steamchina.com
-  - DOMAIN,dl.delivery.mp.microsoft.com
+  - DOMAIN,cdn-ali.content.steamchina.com
   - DOMAIN,dl.steam.clngaa.com
-  - DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
-  - DOMAIN,st.dl.bscstorage.net
+  - DOMAIN,lv.queniujq.cn
   - DOMAIN,st.dl.eccdnx.com
+  - DOMAIN,st.dl.bscstorage.net
   - DOMAIN,steampipe.steamcontent.tnkjmec.com
-  - DOMAIN,tlu.dl.delivery.mp.microsoft.com
   - DOMAIN,trts.baishancdnx.cn
-  - DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
   - DOMAIN,xz.pphimalayanrt.com
-  - DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
 
-  #SteamCN
-  - DOMAIN,csgo.wmsj.cn
-  - DOMAIN,dl.steam.clngaa.com
-  - DOMAIN,dl.steam.ksyna.com
-  - DOMAIN,dota2.wmsj.cn
-  - DOMAIN,st.dl.bscstorage.net
-  - DOMAIN,st.dl.eccdnx.com
-  - DOMAIN,st.dl.pinyuncloud.com
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com
-  - DOMAIN,steampowered.com.8686c.com
-  - DOMAIN,steamstatic.com.8686c.com
-  - DOMAIN,wmsjsteam.com
-  - DOMAIN,xz.pphimalayanrt.com
-  - DOMAIN-SUFFIX,cm.steampowered.com
-  - DOMAIN-SUFFIX,steamchina.com
+#Steam服务器分配
+  - PROCESS-NAME,Steam.exe
   - DOMAIN-SUFFIX,steamcontent.com
   - DOMAIN-SUFFIX,steamserver.net
   - DOMAIN-SUFFIX,steamusercontent.com
