@@ -95,6 +95,7 @@ DOMAIN,st.dl.bscstorage.net
 DOMAIN,steampipe.steamcontent.tnkjmec.com
 DOMAIN,trts.baishancdnx.cn
 DOMAIN,xz.pphimalayanrt.com
+
 #Steam服务器分配
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steamserver.net
