@@ -6,7 +6,7 @@ DOMAIN,api-store.usuc.cc
 #Emby
 DOMAIN,node1.guguemby.site
 DOMAIN,v6.gugu.media
-DOMAIN,css.pilipili.club
+DOMAIN-SUFFIX,pilipili.club
 
 #本地/局域网地址
 DOMAIN-SUFFIX,ip6-localhost
