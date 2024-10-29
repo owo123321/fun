@@ -19,10 +19,13 @@ payload:
   #ACA
   - DOMAIN,emby.aca.best
 
+  #AWA
+  - DOMAIN,emby.awatv.de
+
   #PiliPili
   - DOMAIN-SUFFIX,pilipili.club
   - DOMAIN-SUFFIX,misakaf.org
 
-#纸片人
+  #纸片人
   - DOMAIN-SUFFIX,embyplus.org
   - DOMAIN-SUFFIX,9521732.xyz
