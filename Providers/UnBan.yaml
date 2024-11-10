@@ -8,6 +8,7 @@ payload:
   - DOMAIN,node1.guguemby.site
   - DOMAIN,node2.guguemby.site
   - DOMAIN,node3.guguemby.site
+  - DOMAIN,emby.awatv.de
   - DOMAIN,v6.gugu.media
   - DOMAIN-SUFFIX,pilifun.top
   - DOMAIN,qyxl.pilipili.club
