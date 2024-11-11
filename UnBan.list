@@ -10,7 +10,7 @@ DOMAIN,node3.guguemby.site
 DOMAIN,v6.gugu.media
 DOMAIN,emby.awatv.de
 DOMAIN-SUFFIX,pilifun.top
-DOMAIN,qyxl.pilipili.club
+DOMAIN-SUFFIX,pilipili.club
 
 #本地/局域网地址
 DOMAIN-SUFFIX,ip6-localhost
