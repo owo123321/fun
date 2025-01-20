@@ -4,9 +4,6 @@ DOMAIN-SUFFIX,misu.uk
 #Lev
 DOMAIN-SUFFIX,itsmyduty.top
 
-#GuGu
-DOMAIN,main.gugumedia.site
-
 #垃圾
 DOMAIN-SUFFIX,xmsl.org
 DOMAIN-SUFFIX,emby.moe
@@ -29,7 +26,8 @@ DOMAIN,emby.awatv.de
 
 #PiliPili
 DOMAIN-SUFFIX,pilipili.club
-DOMAIN-SUFFIX,misakaf.org
+DOMAIN-SUFFIX,pili.top
+DOMAIN-SUFFIX,pilipiliultra.com
 
 #纸片人
 DOMAIN-SUFFIX,embyplus.org
