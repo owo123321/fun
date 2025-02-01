@@ -1,4 +1,7 @@
 payload:
+  #机场服
+  - DOMAIN-SUFFIX,cn2gias.uk
+  
   #牢大
   - DOMAIN-SUFFIX,misu.uk
 
@@ -18,12 +21,6 @@ payload:
 
   #Peach
   - DOMAIN-SUFFIX,embymv.link
-
-  #ACA
-  - DOMAIN,emby.aca.best
-
-  #AWA
-  - DOMAIN,emby.awatv.de
 
   #PiliPili
   - DOMAIN-SUFFIX,pilipili.club
