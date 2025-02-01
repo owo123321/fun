@@ -1,4 +1,7 @@
-#牢大
+#机场服
+DOMAIN-SUFFIX,cn2gias.uk
+
+#Man
 DOMAIN-SUFFIX,misu.uk
 
 #Lev
@@ -8,7 +11,7 @@ DOMAIN-SUFFIX,itsmyduty.top
 DOMAIN-SUFFIX,xmsl.org
 DOMAIN-SUFFIX,emby.moe
 
-#卷毛鼠
+#卷毛
 DOMAIN-SUFFIX,jmsuper.com
 
 #终点站
@@ -17,9 +20,6 @@ DOMAIN-SUFFIX,term.wtf
 
 #Peach
 DOMAIN-SUFFIX,embymv.link
-
-#ACA
-DOMAIN,emby.aca.best
 
 #AWA
 DOMAIN,emby.awatv.de
