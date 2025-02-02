@@ -4,11 +4,9 @@ DOMAIN,suc-store.usuc.cc
 DOMAIN,api-store.usuc.cc
 
 #Emby
-DOMAIN,node1.guguemby.site
-DOMAIN,node2.guguemby.site
-DOMAIN,node3.guguemby.site
+DOMAIN-SUFFIX, guguemby.site
 DOMAIN,v6.gugu.media
-DOMAIN-SUFFIX,pilifun.top
+DOMAIN-SUFFIX,makima.online
 DOMAIN-SUFFIX,pilipili.club
 DOMAIN-SUFFIX,pilipiliultra.com
 DOMAIN-SUFFIX,clun.top
