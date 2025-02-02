@@ -5,7 +5,7 @@ payload:
   - DOMAIN,api-store.usuc.cc
   
   #Emby
-  - DOMAIN-SUFFIX, guguemby.site
+  - DOMAIN-SUFFIX,guguemby.site
   - DOMAIN,v6.gugu.media
   - DOMAIN-SUFFIX,makima.online
   - DOMAIN-SUFFIX,pilipili.club
