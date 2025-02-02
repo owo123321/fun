@@ -1,6 +1,7 @@
 payload:
   # 机场官网
   - DOMAIN-SUFFIX,jinglongyu.com
+  - DOMAIN-SUFFIX,synn.cc
   
   # GameDownload
   - DOMAIN-SUFFIX,dyn.riotcdn.net
