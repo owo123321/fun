@@ -10,7 +10,9 @@ payload:
   
   #垃圾
   - DOMAIN-SUFFIX,xmsl.org
-  - DOMAIN-SUFFIX,emby.moe
+
+  #月饼
+  - DOMAIN-SUFFIX,emby.my
   
   #卷毛鼠
   - DOMAIN-SUFFIX,jmsuper.com
