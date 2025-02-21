@@ -1,14 +1,11 @@
 payload:
   #Sub
   - DOMAIN,api.dler.io
-  - DOMAIN,suc-store.usuc.cc
-  - DOMAIN,api-store.usuc.cc
   
   #Emby
   - DOMAIN-SUFFIX,guguemby.site
-  - DOMAIN,v6.gugu.media
+  - DOMAIN-SUFFIX,gugu.media
   - DOMAIN-SUFFIX,makima.online
-  - DOMAIN-SUFFIX,clun.top
   - DOMAIN,shanghai.emby.my
   - DOMAIN,hksgyr.emby.my
   - DOMAIN-SUFFIX,biliblili.uk
