@@ -1,0 +1,14 @@
+payload:
+  #Lev
+  - DOMAIN-SUFFIX,itsmyduty.top
+  
+  #垃圾
+  - DOMAIN-SUFFIX,xmsl.org
+  - DOMAIN-SUFFIX,emby.moe
+
+  #卷毛鼠
+  - DOMAIN-SUFFIX,jmsuper.com
+
+  #PiliPili
+  - DOMAIN-SUFFIX,pilipili.club
+  - DOMAIN-SUFFIX,pilipiliultra.com
