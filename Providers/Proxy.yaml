@@ -2,7 +2,7 @@ payload:
   # 机场官网
   - DOMAIN-SUFFIX,fmta.boo
   - DOMAIN-SUFFIX,synn.cc
-  - DOMAIN-SUFFIX,syyn.pw
+  - DOMAIN-SUFFIX,syyn.moe
   
   # GameDownload
   - DOMAIN-SUFFIX,dyn.riotcdn.net
