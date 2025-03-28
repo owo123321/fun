@@ -8,8 +8,6 @@ payload:
   - DOMAIN-SUFFIX,makima.online
   - DOMAIN,jp3rg7.emby.my
   - DOMAIN,uhebs.emby.my
-  - DOMAIN-SUFFIX,hardmoon.net
-  - DOMAIN-SUFFIX,embymv.link
   
   #本地/局域网地址
   - DOMAIN-SUFFIX,ip6-localhost
