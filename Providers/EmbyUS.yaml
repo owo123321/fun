@@ -5,9 +5,6 @@ payload:
   #牢大
   - DOMAIN-SUFFIX,bilibili.uk
 
-  #月饼
-  - DOMAIN-SUFFIX,emby.my
-
   #终点站
   - DOMAIN-SUFFIX,emby.wtf
   - DOMAIN-SUFFIX,term.wtf
