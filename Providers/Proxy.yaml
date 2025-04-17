@@ -3,6 +3,7 @@ payload:
   - DOMAIN-SUFFIX,fmta.boo
   - DOMAIN-SUFFIX,synn.cc
   - DOMAIN-SUFFIX,syyn.moe
+  - DOMAIN-SUFFIX,syyn.pw
   
   # GameDownload
   - DOMAIN-SUFFIX,dyn.riotcdn.net
