@@ -3,7 +3,7 @@ payload:
   - DOMAIN-SUFFIX,cn2gias.uk
 
   #Mooncake
-  - DOMAIN,uhebs.emby.my
+  - DOMAIN,b.emby.my
 
   #终点站
   - DOMAIN-SUFFIX,emby.wtf
