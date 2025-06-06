@@ -5,6 +5,7 @@ payload:
   #垃圾
   - DOMAIN-SUFFIX,xmsl.org
   - DOMAIN-SUFFIX,emby.moe
+  - DOMAIN-SUFFIX,xxlb.net
 
   #卷毛鼠
   - DOMAIN-SUFFIX,jmsuper.com
