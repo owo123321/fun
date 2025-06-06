@@ -1,9 +1,9 @@
 payload:
   #机场服
   - DOMAIN-SUFFIX,cn2gias.uk
-  
-  #牢大
-  - DOMAIN-SUFFIX,bilibili.uk
+
+  #Mooncake
+  - DOMAIN,uhebs.emby.my
 
   #终点站
   - DOMAIN-SUFFIX,emby.wtf
