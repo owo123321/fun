@@ -1,19 +1,13 @@
 payload:
+  # ntr
+  - DOMAIN-SUFFIX,stream.synn.cc
+  
   #机场服
   - DOMAIN-SUFFIX,cn2gias.uk
 
-  #Lev
-  - DOMAIN-SUFFIX,itsmyduty.top
-  
-  #垃圾
-  - DOMAIN-SUFFIX,xmsl.org
-  - DOMAIN-SUFFIX,emby.moe
-
-  #月饼
-  - DOMAIN-SUFFIX,emby.my
-  
-  #卷毛鼠
-  - DOMAIN-SUFFIX,jmsuper.com
+  #Mooncake
+  - DOMAIN,b.emby.my
+  - DOMAIN-SUFFIX,637567.xyz
 
   #终点站
   - DOMAIN-SUFFIX,emby.wtf
@@ -22,10 +16,18 @@ payload:
   #Peach
   - DOMAIN-SUFFIX,embymv.link
 
-  #PiliPili
-  - DOMAIN-SUFFIX,pilipili.club
-  - DOMAIN-SUFFIX,pilipiliultra.com
-
   #纸片人
   - DOMAIN-SUFFIX,embyplus.org
   - DOMAIN-SUFFIX,9521732.xyz
+  
+  #垃圾
+  - DOMAIN-SUFFIX,xmsl.org
+  - DOMAIN-SUFFIX,emby.moe
+  - DOMAIN-SUFFIX,xxlb.net
+
+  #卷毛鼠
+  - DOMAIN-SUFFIX,jmsuper.com
+
+  #PiliPili
+  - DOMAIN-SUFFIX,pilipili.club
+  - DOMAIN-SUFFIX,pilipiliultra.com
