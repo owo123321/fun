@@ -7,7 +7,7 @@ DOMAIN-SUFFIX,gugu.media
 DOMAIN-SUFFIX,makima.online
 DOMAIN,a.emby.my
 DOMAIN,uhebs.emby.my
-DOMAIN,dt6s21.637567.xyz
+DOMAIN-SUFFIX,637567.xyz
 
 #本地/局域网地址
 DOMAIN-SUFFIX,ip6-localhost
