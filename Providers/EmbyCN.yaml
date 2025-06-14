@@ -9,3 +9,7 @@ payload:
   #Mooncake
   - DOMAIN-SUFFIX,emby.my
   - DOMAIN-SUFFIX,637567.xyz
+
+  #Onyra
+  - DOMAIN-SUFFIX,onyra.cc
+  - DOMAIN-SUFFIX,onyra.uk
