@@ -6,9 +6,9 @@ payload:
   - DOMAIN-SUFFIX,cn2gias.uk
 
   #Mooncake
-  - DOMAIN-SUFFIX,emby.my
-  - DOMAIN-SUFFIX,637567.xyz
-
+  - DOMAIN,emby.my
+  - DOMAIN,cfcdn.mobai.sbs
+  
   #终点站
   - DOMAIN-SUFFIX,emby.wtf
   - DOMAIN-SUFFIX,term.wtf
