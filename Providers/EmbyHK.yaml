@@ -1,3 +1,7 @@
 payload:
   # ntr
   - DOMAIN-SUFFIX,stream.synn.cc
+
+  # Mooncake
+  - DOMAIN,emby.my
+  - DOMAIN,cfcdn.mobai.sbs
