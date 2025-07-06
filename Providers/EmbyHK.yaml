@@ -5,3 +5,4 @@ payload:
   # Mooncake
   - DOMAIN,emby.my
   - DOMAIN,cfcdn.mobai.sbs
+  - DOMAIN,cftest1.mobai.sbs
