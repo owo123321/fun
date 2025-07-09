@@ -8,6 +8,7 @@ payload:
   #Mooncake
   - DOMAIN,emby.my
   - DOMAIN,cfcdn.mobai.sbs
+  - DOMAIN,cftest1.mobai.sbs
   
   #终点站
   - DOMAIN-SUFFIX,emby.wtf
