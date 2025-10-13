@@ -7,8 +7,8 @@ payload:
   - DOMAIN-SUFFIX,makima.online
 
   #Mooncake
-  - DOMAIN,uhebs.emby.my
-  - DOMAIN,speedtest-peppapig.apple-cdn.net
+  - DOMAIN-SUFFIX,uhebs.emby.my
+  - DOMAIN-SUFFIX,apple-cdn.net
 
   #Terminus+
   - DOMAIN-SUFFIX,zdz.plus
