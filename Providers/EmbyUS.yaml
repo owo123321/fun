@@ -14,7 +14,7 @@ payload:
 
   #Peach
   - DOMAIN-SUFFIX,embymv.link
-  - IP-CIDR, 152.53.243.160
+  - IP-CIDR, 152.53.243.160/32
 
   #纸片人
   - DOMAIN-SUFFIX,embyplus.org
