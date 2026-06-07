@@ -2,6 +2,7 @@ payload:
   #UHD
   - DOMAIN,v1.uhdnow.com
   - DOMAIN,global.uhdnow.com
+  - DOMAIN,v1-vod1.uhdnow.com
   
   #机场服
   - DOMAIN-SUFFIX,cn2gias.uk
