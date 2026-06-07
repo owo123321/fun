@@ -13,6 +13,7 @@ DOMAIN,b2.zdz.plus
 
 #Peach
 DOMAIN-SUFFIX,embymv.link
+IP-CIDR, 152.53.243.160
 
 #纸片人
 DOMAIN-SUFFIX,embyplus.org
