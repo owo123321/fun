@@ -1,6 +1,7 @@
 #UHD
 DOMAIN,v1.uhdnow.com
 DOMAIN,global.uhdnow.com
+DOMAIN,v1-vod1.uhdnow.com
 
 #SNTP
 DOMAIN-SUFFIX,cn2gias.uk
