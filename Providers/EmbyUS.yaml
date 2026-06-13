@@ -19,3 +19,6 @@ payload:
   #纸片人
   - DOMAIN-SUFFIX,embyplus.org
   - DOMAIN-SUFFIX,9521732.xyz
+
+  #PiliPili
+  - DOMAIN-SUFFIX,biliblili.uk
