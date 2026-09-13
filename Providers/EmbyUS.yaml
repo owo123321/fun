@@ -4,7 +4,7 @@ payload:
   - DOMAIN,global.uhdnow.com
   - DOMAIN,v1-vod1.uhdnow.com
   
-  #机场服
+  #SNTP
   - DOMAIN-SUFFIX,cn2gias.uk
 
   #终点站
@@ -21,5 +21,4 @@ payload:
   - DOMAIN-SUFFIX,9521732.xyz
 
   #PiliPili
-  - DOMAIN, mihoyo.biliblili.uk
-  - DOMAIN, genshin.biliblili.uk
+  - DOMAIN-SUFFIX, biliblili.uk
