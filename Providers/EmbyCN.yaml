@@ -1,14 +1,10 @@
 payload:
   #UHD
   - DOMAIN-SUFFIX,uhdnow.com
-  - DOMAIN,mlc.once.im
   
   #GuGu
   - DOMAIN-SUFFIX,guguemby.site
   - DOMAIN-SUFFIX,gugu.media
-
-  #SYN
-  - DOMAIN-SUFFIX,makima.online
 
   #Mooncake
   - DOMAIN-SUFFIX,emby.my
@@ -19,4 +15,4 @@ payload:
 
   #霹雳优化
   - DOMAIN-SUFFIX,43992026.xyz
-  - DOMAIN, l5okyats-2lruf01f.biliblili.uk
+  - DOMAIN-SUFFIX,biliblili.uk
