@@ -1,6 +1,10 @@
 payload:
   #Sub
   - DOMAIN,api.dler.io
+
+  #霹雳优化
+  - DOMAIN-SUFFIX,43992026.xyz
+  - DOMAIN,l5okyats-2lruf01f.biliblili.uk
   
   #本地/局域网地址
   - DOMAIN-SUFFIX,ip6-localhost
@@ -79,7 +83,7 @@ payload:
   - DOMAIN-SUFFIX,steamusercontent.com
 
   #GoogleFCM
-    - DOMAIN,alt1-mtalk.google.com
+  - DOMAIN,alt1-mtalk.google.com
   - DOMAIN,alt2-mtalk.google.com
   - DOMAIN,alt3-mtalk.google.com
   - DOMAIN,alt4-mtalk.google.com
