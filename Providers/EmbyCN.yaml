@@ -12,3 +12,6 @@ payload:
 
   #Terminus+
   - DOMAIN-SUFFIX,zdz.plus
+
+  #Panda
+  - DOMAIN-SUFFIX,pdtvs.com
