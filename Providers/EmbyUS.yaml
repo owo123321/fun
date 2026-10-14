@@ -13,7 +13,7 @@ payload:
   - DOMAIN,b2.zdz.plus
 
   #Peach
-  - DOMAIN-SUFFIX,embymv.link
+  - DOMAIN-SUFFIX,embymv.cc
   - IP-CIDR, 152.53.243.160/32
 
   #纸片人
