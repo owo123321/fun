@@ -1,6 +1,9 @@
 payload:
   #UHD
   - DOMAIN-SUFFIX,uhdnow.com
+
+  #Lumen
+  - DOMAIN-SUFFIX,lumenvids.com
   
   #GuGu
   - DOMAIN-SUFFIX,guguemby.site
