@@ -4,6 +4,9 @@ payload:
   - DOMAIN,v1.uhdgo.com
   - DOMAIN,global.uhdnow.com
   - DOMAIN,v1-vod1.uhdnow.com
+
+  #Lumen
+  - DOMAIN,media.lumenvids.com
   
   #SNTP
   - DOMAIN-SUFFIX,cn2gias.uk
